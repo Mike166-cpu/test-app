@@ -1,0 +1,7 @@
+static_sites:
+  - name: https://human-resources-b9cl.onrender.com
+    build_command: npm install && npm run build
+    publish_directory: dist
+    rewrites:
+      - source: /*
+        destination: /index.html
